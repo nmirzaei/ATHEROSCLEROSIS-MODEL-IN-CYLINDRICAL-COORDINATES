@@ -317,9 +317,9 @@ while counter<=M:
 ######################################################################
      
 #printing the current loop variables
- print(epsilon)#,flush=True)
- print(t)#,flush=True)  
- print(sigma)#,flush=True)   
+ print(epsilon,flush=True)
+ print(t,flush=True)  
+ print(sigma,flush=True)   
 ######################################################################
 
 #updating
