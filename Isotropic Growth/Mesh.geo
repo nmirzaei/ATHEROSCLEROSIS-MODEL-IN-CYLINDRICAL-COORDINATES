@@ -67,17 +67,9 @@ Physical Surface(8) = {2};
 //+
 Physical Surface(9) = {3};
 //+
-
-//+
 Field[1] = MathEval;
 //+
-//we went to 247 with the following
-//Field[1].F = "0.015*exp(0.4*(abs(x-0.3)+abs(y-4)))";
-//we went to 299 with the following
-//Field[1].F = "0.013*exp(0.4*(abs(x-0.3)+abs(y-4)))";
-//The following works for the parameters (1,0.8,0.06) up to 3000 with order 2 elements but for (3.2,0.8,0.192) it only goes to 160 max 
 Field[1].F = "0.00462*exp(0.9523809524*(abs(x-0.126)+abs(y-1.68)))";
-//only to 158 for (3.2,0.8,0.192) via the following
-//Field[1].F = "0.009*exp(0.4*(abs(x-0.3)+abs(y-4)))";
-//Field[1].F = "0.025*exp(5.4*(abs(x-0.3)))";
+//+
 Background Field = 1;
+//+ 
