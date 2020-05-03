@@ -6,7 +6,6 @@ from sympy import atan2,Abs
 from animation import animation
 from GradF import GradF
 from gradv import gradv
-from gradG import gradG
 import os
 
 #The following lines take an already converted Gmsh mesh and import it
@@ -217,9 +216,6 @@ while int(epsilon*1000)<=int(epsmax*1000):
 ######################################################################
  
  
-#The extra term because of the non-local growth (Not needed for this choice of growth b/c G it is not depending on radius and grad(inv(J_g))||N therefore we will not end up with an extra term) 
- Non_Loc_G_Correction = dot(NansonOp,gradG(G_i_inv,x))
-######################################################################
  
 #Creating the required test functions according to our change of coordinates
  GradV = gradv(v,x)
