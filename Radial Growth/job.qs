@@ -10,7 +10,7 @@
 
 vpkg_require singularity
 vpkg_require fenics
-Sexec python3 main_python3.py
+Sexec python3 main_script.py
 
 
 
